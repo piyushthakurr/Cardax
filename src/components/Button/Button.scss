@@ -1,0 +1,78 @@
+@import "../../assets/theme/clr_var.scss";
+
+.buttonStyle.btn {
+  cursor: pointer;
+  padding: 7px 10px 5px;
+  // background-image: $gradientColor-2;
+  background: #0ABF53;
+  border-radius: 25px;
+  min-width: 130px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  color: $white;
+  border: 0;
+  font-family: $baseFont;
+  z-index: 1;
+  transition: all ease 0.5s;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 29px;
+
+  &:focus {
+    box-shadow: unset;
+    outline: unset;
+  }
+
+  img {
+    display: none;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    // background: transparent linear-gradient(268deg, #c996cc 0%, #8b26f4 100%) padding-box;
+    background: $white;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 25px;
+    top: 0;
+    // opacity: 0;
+    left: 100%;
+    transition: all ease 0.5s;
+  }
+
+  &:hover {
+    color: $BtnPrimary  !important;
+
+    &:after {
+      opacity: 1;
+      left: 0;
+      transition: all ease 0.5s;
+    }
+  }
+
+  &:disabled {
+    background: $BtnSecondary;
+    color: $white;
+  }
+
+}
+
+.logout_btn {
+  img {
+    margin-bottom: 0 !important;
+  }
+}
+
+.logout_btn {
+  img {
+    margin-bottom: 0 !important;
+  }
+}

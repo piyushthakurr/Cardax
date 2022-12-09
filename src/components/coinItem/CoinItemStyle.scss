@@ -1,0 +1,57 @@
+@import "../../assets/theme/clr_var.scss";
+
+.coinItem_style {
+  transition: all 0.25s;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    background-color: $BtnPrimary;
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    // background-color: $secondaryColor;
+    opacity: 0.3;
+
+    &:hover {
+      background-color: inherit;
+    }
+  }
+
+  &.active {
+    cursor: not-allowed;
+    background-color: $BtnPrimary;
+    opacity: 0.7;
+  }
+
+  img {
+    width: 28px;
+    height: 28px;
+    margin-right: 12px;
+    border-radius: 100px;
+    object-fit: cover;
+  }
+
+  .titleStyle {
+    font-family: $baseFont;
+    font-size: 12px;
+    font-weight: 500;
+    color: $white;
+    margin: 0;
+    padding: 0;
+  }
+
+  &>.col div:disabled,
+  &>div:disabled {
+    opacity: 0.2 !important;
+  }
+}
+
+.coinListBlockStyle.row *:disabled {
+  opacity: 0.2 !important;
+}

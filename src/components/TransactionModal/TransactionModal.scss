@@ -1,0 +1,55 @@
+@import "../../assets/theme/clr_var.scss";
+
+.modal_headerStyle {
+  border-bottom: 1px solid $boderColor;
+  margin-bottom: 25px;
+}
+
+.modal_headerStyle__rowA {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  .modal_headerStyle__rowA_colLeft {
+    display: flex;
+    align-items: center;
+    h2 {
+      font-size: 18px;
+      color: $white;
+      font-weight: 400;
+      margin-right: 5px;
+    }
+  }
+  .modal_headerStyle__rowA_colRight {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @media (max-width: 767px) {
+      flex-basis: 0;
+    }
+  }
+}
+.transactionSubmit {
+  max-width: 362px !important;
+  .modal_headerStyle {
+    border-bottom: 0 solid #000;
+  }
+  .transaction_body {
+    display: flex;
+    flex-direction: column;
+    .viewbox {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      a {
+        font-size: 19px;
+        line-height: 23px;
+        font-weight: 600;
+
+        margin-top: 20px;
+      }
+    }
+    .buttonStyle {
+      margin: 25px 0 15px 0;
+    }
+  }
+}

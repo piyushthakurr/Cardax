@@ -1,0 +1,42 @@
+@import "../../assets/theme/clr_var.scss";
+
+.profileModal_sec {
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    word-break: break-all;
+    min-width: 250px;
+  }
+
+  .copySec {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-around;
+    align-items: center;
+
+    a,
+    span {
+      text-decoration: none;
+      color: $BtnPrimary !important;
+      font-weight: 500;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    a {
+      transition: all 0.2s;
+
+      &:hover {
+        color: $white;
+      }
+    }
+
+    img {
+      width: 15px;
+      margin-left: 5px !important;
+      display: inline-block !important;
+      margin-bottom: 0 !important;
+    }
+  }
+}

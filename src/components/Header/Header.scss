@@ -1,0 +1,90 @@
+@import "../../assets/theme/clr_var.scss";
+
+// #walletconnect-qrcode-text,
+// .walletconnect-connect__button__icon_anchor {
+//   display: none !important;
+// }
+.header_style {
+  display: flex;
+  background: $HeaderBg;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 11;
+  position: sticky;
+  top: 0;
+  transition: all 0.25s;
+  padding: 10px 30px;
+
+  @media (max-width: 767px) {
+    padding: 10px 20px;
+  }
+
+  // &.isFixed {
+  //   top: -100px;
+  // }
+
+  .header_left_style {
+    display: flex;
+    align-items: center;
+
+    .header_logo {
+      width: 135px;
+      height: 35px;
+      background: url("../../assets/images/Cardax_logo.png") no-repeat;
+      background-size: 100%;
+      display: flex;
+      font-family: $baseFont;
+      display: inline-block;
+      transition: all 0.25s;
+
+      @media (max-width: 991px) {
+        width: 120px;
+        height: 30px;
+      }
+
+      @media (max-width: 575px) {
+        background: url("../../assets/images/Cardax_Favicon.png") no-repeat;
+        width: 32px;
+        height: 35px;
+        background-size: 100%;
+      }
+    }
+  }
+
+  .header_right_style {
+    text-align: right;
+    display: flex;
+    align-items: center;
+
+    a.connect__Link {
+      min-width: 158px;
+      text-align: center;
+      transition: all 0.25s;
+    }
+  }
+}
+
+.for_desktop,
+.for_mobile {
+  margin-left: 18px;
+
+  img {
+    width: 20px;
+    cursor: pointer;
+  }
+}
+
+.for_mobile {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .for_desktop {
+    display: none;
+  }
+
+  .for_mobile {
+    display: block;
+    // margin: 9px 0 0;
+  }
+}

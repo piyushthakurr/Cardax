@@ -1,0 +1,10 @@
+.overlayDiv {
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 111111;
+  background: rgba(0, 11, 41, 0.7);
+  align-items: center;
+  justify-content: center;
+}

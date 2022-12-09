@@ -1,0 +1,162 @@
+@import '../../assets/theme/clr_var.scss';
+
+.connect_wallet {
+  .modal-dialog {
+    max-width: 335px;
+    margin: 0 auto;
+
+    @media (max-width: 374px) {
+      max-width: 310px;
+    }
+
+    .modal-body {
+      display: flex;
+      padding: 27px;
+      flex-direction: column;
+    }
+
+    .modal-content {
+      background: $BodyBg;
+      color: $white;
+      border: 1px solid $borderBg;
+      border-radius: 8px;
+      overflow: unset;
+
+      .modal-header {
+        padding: 24px;
+        position: relative;
+        justify-content: center;
+        border-bottom: 1px solid $borderBg;
+
+        .modal-title {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 11px;
+        }
+
+        .btn-close {
+          background: url(../../assets/images/token_icons/saitamaIcons/crossIcon.svg)
+            center no-repeat;
+          outline: none;
+          background-size: 12px;
+
+          opacity: 1;
+          border-radius: 50px;
+          position: absolute;
+          right: 14px;
+          top: 14px;
+          width: 10px;
+          height: 10px;
+          padding: 5px;
+          border: 1px solid$BtnPrimary;
+          // background-color: $baseColor-2;
+
+          &:focus {
+            box-shadow: none;
+          }
+
+          @media (max-width: 767px) {
+            right: 17px;
+            top: 17px;
+          }
+        }
+      }
+
+      .baseToken_style.token_strut {
+        padding-top: 0px;
+
+        @media (max-width: 767px) {
+          padding-top: 0;
+        }
+
+        ul {
+          padding-left: 0;
+
+          li {
+            display: block;
+            margin-right: 0;
+            margin-bottom: 13px;
+
+            button.btn {
+              padding: 10px 17px;
+              border-radius: 19px;
+              width: 100%;
+              text-decoration: none;
+              font-size: 11px;
+              font-weight: 500;
+              color: $white;
+              font-family: 'Montserrat', sans-serif;
+              display: block;
+              text-align: left;
+              background: $SecondaryBodyBg;
+              position: relative;
+              border: 0;
+              height: auto;
+              transition: all 0.2s;
+
+              @media (max-width: 767px) {
+                padding: 12px 20px;
+                font-size: 13px;
+              }
+
+              &:hover {
+                opacity: 0.8;
+              }
+
+              &:focus {
+                box-shadow: none;
+              }
+
+              img {
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                right: 7px;
+                top: 6px;
+                background: $white;
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+      }
+
+      .PolicyCheck {
+        display: flex;
+        align-items: flex-start;
+
+        .form-check-input {
+          background-color: transparent;
+          border: 1px solid $white;
+          margin-right: 10px;
+          &:checked[type='checkbox'] {
+            background-image: url('../../assets/images/checkIcon.svg');
+          }
+          &:focus {
+            border-color: $white;
+            outline: 0;
+            box-shadow: none;
+          }
+        }
+
+        p {
+          font-size: 12px;
+
+          a {
+            color: $BtnPrimary;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.BtnClose {
+  max-width: 140px;
+  margin: 0 auto;
+}
+.ClrText {
+  color: #fff;
+  text-decoration: none;
+}

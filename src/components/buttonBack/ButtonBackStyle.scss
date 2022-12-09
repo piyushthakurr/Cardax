@@ -1,0 +1,15 @@
+@import "../../assets/theme/clr_var.scss";
+
+.goBackButtonStyle {
+  margin-right: 10px;
+  background: transparent;
+  display: inline-block;
+  text-align: center;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  img {
+    transform: rotate(-180deg);
+    width: 12px;
+    height: 10px;
+  }
+}

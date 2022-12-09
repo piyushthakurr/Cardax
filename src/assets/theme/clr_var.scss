@@ -1,0 +1,67 @@
+// helvetica font
+
+@font-face {
+  font-family: "Helvetica Font";
+  src: local("Helvetica Font"),
+    url("../fonts/Helvetica-Font/Helvetica.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Helvetica Font";
+  src: local("Helvetica Font"),
+    url("../fonts/Helvetica-Font/Helvetica-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+$baseFont: "Helvetica Font", sans-serif;
+$baseColor: #1d1d1d;
+$baseColor-2: #1a1a1a;
+$baseColor-3: #222222;
+$baseColor-4: #181827;
+$secondaryColor: #8b26f4;
+$secondaryColor-2: #5c06aa;
+$secondaryColor-3: #5600af;
+$blueColor: #7868e6;
+$white: #ffffff;
+$text-color: #868686;
+$textLight: #cecece;
+$blackColor: #000000;
+$boderColor: #746bde;
+$borderColor-2: #38076c;
+$dimbg: #070707;
+$dimbg-2: #121212;
+$dimbg-3: #111119;
+$dimbg-4: #101010;
+$hoverColor: #8b26f4;
+$buttonDisabled: #496989;
+$noFeedColor: #00ffba;
+$gradientColor: linear-gradient(180deg,
+    rgba(129, 39, 228, 1) 0%,
+    rgba(55, 42, 109, 1) 100%);
+
+$gradientColor-2: linear-gradient(180deg,
+    rgba(139, 38, 244, 1) 0%,
+    rgba(116, 64, 219, 1) 100%);
+
+$gradientColor-3: linear-gradient(180deg,
+    rgba(54, 1, 110, 1) 0%,
+    rgba(74, 10, 201, 1) 100%);
+
+$gradientReverse: linear-gradient(268deg,
+    rgba(139, 38, 244, 1) 0%,
+    rgba(55, 42, 109, 1) 100%);
+$lightpinkColor: #c996cc;
+$purpleColor: #7868e6;
+$baseBg: #5600af;
+
+
+// New Color Code
+$HeaderBg: #1D263B;
+$BtnPrimary: #0ABF53;
+$BtnSecondary: #525B72;
+$BodyBg: #141B2B;
+$SecondaryBodyBg :#1D263B;
+$clorLight:#ffffff2b;
+$borderBg:#A6ACB8;
+$lightPrimary:#4dc054bf;

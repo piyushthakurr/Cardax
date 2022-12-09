@@ -1,0 +1,316 @@
+@import "../../assets/theme/clr_var.scss";
+
+.container_wrap.referral_page {
+  background-image: none;
+
+  .custom_container {
+    z-index: 1;
+    max-width: 100%;
+    position: relative;
+  }
+
+  .timeto_connect {
+    background-image: unset !important;
+    background-size: contain;
+    padding: 75px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: left -25px;
+
+    @media (max-width: 1440px) {
+      padding: 55px;
+      background-size: cover;
+    }
+
+    @media (max-width: 767px) {
+      padding: 15px;
+    }
+
+    &:before {
+      background: #1c1c2d;
+      position: absolute;
+      width: 100%;
+      content: "";
+      left: 0;
+      height: 100%;
+      right: 0;
+      top: 0;
+      opacity: 0.8;
+      z-index: 0;
+    }
+
+    .invite_othr {
+      padding-right: 100px;
+
+      @media (max-width: 1440px) {
+        padding-right: 30px;
+      }
+
+      @media (max-width: 767px) {
+        padding-right: 0px;
+      }
+
+      h2 {
+        margin: 25px 0;
+      }
+    }
+
+    .refflink {
+      background-color: #1c1c2d;
+      padding: 20px 35px 35px;
+      border-radius: 12px;
+
+      @media (max-width: 767px) {
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      h2 {
+        margin: 15px 0;
+      }
+
+      .share_anyone {
+        display: flex;
+        align-items: center;
+
+        p {
+          margin: 0;
+          font-weight: 600;
+        }
+
+        ul.shareable {
+          padding: 0;
+          display: flex;
+          margin-left: 15px;
+          margin-bottom: 0;
+
+          li {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.staking_head {
+  text-align: center;
+  border-radius: 30px;
+  position: relative;
+
+  p {
+    color: $white;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 28px;
+
+    @media (max-width: 767px) {
+      font-size: 17px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.staking_block {
+  background: $BodyBg;
+  max-width: 550px;
+  border-radius: 8px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 32px 27px;
+
+  .staking_content {
+    .form-control {
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+      font-size: 11px;
+      font-weight: 400;
+      position: relative;
+      color: $textLight;
+      border: none;
+      background-color: $SecondaryBodyBg;
+
+      &:focus {
+        box-shadow: unset;
+      }
+    }
+
+    // p {
+    //   position: absolute;
+    //   right: 0;
+    // }
+    .duration_sec {
+      display: flex;
+      gap: 10px;
+      justify-content: end;
+      margin-bottom: 47px;
+
+      @media (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+
+      .time_duration {
+        background: $clorLight;
+        padding: 2px 5px !important;
+        min-width: 60px;
+        height: 26px;
+        font-size: 11px;
+        letter-spacing: -0.4px;
+        color: $text-color;
+        line-height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: 767px) {
+          border-radius: 5px !important;
+        }
+
+        &:active,
+        &.active {
+          color: $white;
+          background: $secondaryColor-2;
+        }
+
+        &:focus {
+          box-shadow: unset;
+        }
+      }
+    }
+
+    .text_area {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+
+      p {
+        margin: 0;
+        color: $text-color;
+        font-size: 11px;
+        font-weight: 400;
+      }
+    }
+
+    .stake_btn {
+      border-radius: 50px;
+      padding: 8px;
+      background: $BtnPrimary;
+      margin: 0 auto 10px;
+      width: 100%;
+      font-size: 11px;
+      max-width: 180px;
+      font-weight: 700;
+      height: auto;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.7;
+        color: $BtnPrimary  !important;
+        background: $white;
+      }
+
+      &:focus {
+        box-shadow: unset !important;
+      }
+
+      @media (max-width: 767px) {
+        border-radius: 12px !important;
+      }
+    }
+
+    margin-bottom: 30px;
+  }
+
+  .para {
+    display: flex;
+    justify-content: space-between;
+    color: $white;
+    font-size: 14px;
+    font-weight: 700;
+
+    @media (max-width: 767px) {
+      color: $textLight;
+    }
+
+    span {
+      font-weight: 400;
+    }
+  }
+}
+
+.duration_bits {
+  max-width: 600px;
+  text-align: center;
+  margin: 10px auto;
+  border: 0 !important;
+
+  tr {
+    border-bottom: 1px solid $borderBg  !important;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  th,
+  td {
+    padding: 5px 15px !important;
+    font-size: 11px !important;
+    color: $textLight;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 400;
+
+    p {
+      font-size: 11px !important;
+      margin: 0;
+    }
+
+    .unstake_btn {
+      background: transparent linear-gradient(268deg, #8b26f4 0%, #c996cc 100%);
+      border-radius: 15px;
+      font-size: 11px;
+      padding: 8px 15px;
+      min-width: 90px;
+      height: 32px;
+
+      &:hover,
+      &:focus {
+        background: transparent linear-gradient(268deg, #c996cc 0%, #8b26f4 100%);
+        box-shadow: unset !important;
+      }
+    }
+  }
+
+  th {
+    font-size: 11px !important;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+}
+
+.table> :not(:first-child) {
+  border-top: none;
+}
+
+.stakeAmountbox {
+  max-height: 200px;
+  overflow: auto;
+  background-color: $SecondaryBodyBg;
+  border-radius: 8px;
+  padding: 0px 20px;
+
+  @media (max-width: 467px) {
+    padding: 0;
+  }
+}
+
+.import-text {
+  font-size: 11px;
+  font-weight: 700;
+  color: $white;
+  margin-bottom: 0;
+}

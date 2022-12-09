@@ -1,0 +1,16 @@
+@import "../../assets/theme/clr_var.scss";
+.RecentBody {
+  padding: 10px 15px !important;
+}
+.no_record {
+  p {
+    text-align: center !important;
+  }
+}
+
+.Clossing {
+  height: 40px !important;
+  display: flex !important;
+  background: $BtnPrimary !important;
+  margin: 30px auto 0;
+}

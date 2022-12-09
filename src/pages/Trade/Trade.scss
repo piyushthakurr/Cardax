@@ -1,0 +1,659 @@
+@import '../../assets/theme/clr_var.scss';
+
+.container_wrap.trade {
+  // padding: 40px 0;
+  // @media (max-width: 767px) {
+  //   padding: 0;
+  // }
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .comnBlk {
+    padding-top: 0;
+    max-width: 390px;
+    margin: 0 auto;
+
+    &.lang-blk {
+      padding: 0px 0px 0;
+      border-radius: 19px;
+      overflow: hidden;
+      margin-bottom: 20px;
+
+      .tab-content {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .swap_title {
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 30px;
+
+    @media (max-width: 767px) {
+      font-size: 17px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .tab-content {
+    margin-top: 20px;
+  }
+
+  .swapScreen {
+    padding: 0;
+
+    .container {
+      position: relative;
+
+      .settingsTop {
+        position: absolute;
+        right: 0;
+        display: flex;
+        align-items: center;
+        list-style: none;
+        right: 25px;
+
+        li {
+          margin-right: 15px;
+          // color: $greenColor;
+        }
+      }
+    }
+
+    .nav-tabs.nav {
+      max-width: max-content;
+      padding: 0;
+      background: transparent;
+      border-radius: 0;
+      border: none !important;
+      justify-content: center;
+      margin: 0 auto;
+
+      &.lang-tab {
+        padding: 0;
+        margin-bottom: 1px !important;
+
+        .nav-link {
+          padding: 12px 71px;
+
+          @media (max-width: 1600px) {
+            padding: 12px 47px;
+          }
+
+          @media (max-width: 1285px) {
+            padding: 12px 39px;
+          }
+
+          &.active {
+            background: #323245;
+            border-radius: 0;
+            color: #fff !important;
+          }
+        }
+      }
+
+      .nav-link {
+        margin: 0 2px;
+        padding: 11px 15px;
+        min-width: 100px;
+        border: none !important;
+        font-size: 14px;
+        font-weight: 400;
+        color: $white;
+        border-radius: 0 0 8px 8px;
+        background: $BtnSecondary;
+
+        @media (max-width: 767px) {
+          border-radius: 0 0 5px 5px;
+        }
+
+        @media (max-width: 374px) {
+          min-width: 80px;
+          padding: 5px 10px;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+          color: $white !important;
+        }
+
+        &.active {
+          background: $BtnPrimary;
+          color: $white !important;
+        }
+      }
+    }
+
+    .lang-content {
+      padding: 15px 30px;
+      font-size: 12px;
+      line-height: 17px;
+      padding-bottom: 30px;
+      border-radius: 0 0 19px 19px;
+      background: #aa3e80;
+
+      @media (max-width: 1199px) {
+        padding: 15px 10px;
+      }
+
+      h2 {
+        font-size: 25px;
+        line-height: 46px;
+
+        @media (max-width: 1400px) {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .convert_plus {
+      border-radius: 100px;
+      margin: 8px auto;
+      display: flex;
+      justify-content: center;
+
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+      span {
+        cursor: pointer;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background: $BtnPrimary;
+        width: 36px;
+        height: 32px;
+        border-radius: 2px;
+
+        img {
+          width: 11px;
+        }
+      }
+    }
+
+    .linkDirection {
+      color: #bdbdbd;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 30px;
+      display: inherit;
+      text-decoration: none;
+      cursor: pointer;
+
+      svg {
+        margin-left: 18px;
+        //   @include transition(all ease 0.5s);
+      }
+
+      &:hover {
+        //   @include transition(all ease 0.5s);
+        //   color: $white;
+        svg {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .tipDirection {
+      background: #332247 0% 0% no-repeat padding-box;
+      border-radius: 10px;
+      opacity: 1;
+      backdrop-filter: blur(30px);
+      -webkit-backdrop-filter: blur(30px);
+    }
+
+    .swapBtn_col {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0px;
+
+      .swapBtn {
+        min-width: 122px;
+
+        &:hover {
+          color: $white;
+        }
+
+        &.dismissBtn {
+          background-color: $dimbg;
+          background-image: none;
+        }
+      }
+    }
+
+    .priceSec_col {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      margin-bottom: 20px;
+
+      h5 {
+        font-size: 11px;
+        font-weight: 400;
+        color: $textLight;
+        margin-bottom: 0;
+      }
+    }
+
+    .settingSec {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      align-items: center;
+
+      img {
+        cursor: pointer;
+        width: 21px;
+        height: 21px;
+      }
+
+      .timerImg {
+        margin-right: 10px;
+      }
+
+      .arrowRepeat {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+      }
+
+      h4 {
+        font-size: 20px;
+        font-weight: 700;
+
+        @media (max-width: 767px) {
+          font-size: 16px;
+          margin-bottom: 0px;
+        }
+      }
+
+      h4 {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 0;
+        padding-top: 4px;
+      }
+
+      .goBackButtonStyle {
+        img {
+          width: 12px;
+          height: 10px;
+          vertical-align: baseline;
+        }
+      }
+    }
+
+    .firstPro_Note {
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      background-color: $dimbg;
+      border: 1px solid $boderColor;
+
+      p {
+        font-size: 15px;
+        margin-bottom: 0;
+      }
+    }
+
+    .card_style_bottom,
+    .lp-class {
+      margin: 20px 0 0;
+
+      ul {
+        padding: 15px 20px;
+        margin-bottom: 0;
+
+        li {
+          font-size: 13px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 5px 0;
+        }
+      }
+    }
+
+    .lp-class {
+      border: 1px solid $borderBg;
+      border-radius: 20px;
+      padding: 25px 15px 10px;
+
+      h4 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .LptokensList {
+        padding: 0;
+
+        li {
+          span {
+            img {
+              width: 30px;
+            }
+          }
+        }
+      }
+    }
+
+    .selectCurrency_modal {
+      margin: 20px 15px 0;
+      padding: 20px;
+
+      .lessMargin_bottom {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        justify-content: space-between;
+      }
+
+      h2 {
+        font-size: 20px;
+        margin-bottom: 0;
+      }
+
+      .confirm_list {
+        padding: 0;
+
+        li {
+          display: flex;
+          font-size: 13px;
+          align-items: center;
+          justify-content: space-between;
+          margin: 10px 0;
+
+          p {
+            margin-bottom: 0;
+
+            img {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .liquidtySec {
+    max-width: 385px;
+    margin: auto;
+
+    // .selectCoin_style.col {
+    //   label {
+    //     font-size: 13px;
+    //     font-weight: 700;
+    //   }
+    //   .selectCoin_right_style {
+    //     .coin_Img {
+    //       width: 12px;
+    //       height: 12px;
+    //       margin-right: 5px;
+    //       margin-left: 5px;
+    //     }
+    //   }
+    // }
+    .poolSec {
+      margin-top: 10px;
+
+      h6 {
+        font-size: 13px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .poolDiv {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 20px;
+        border: 1px solid $borderBg;
+        padding: 25px 15px;
+        margin-bottom: 15px;
+
+        span {
+          font-size: 13px;
+          font-weight: 700;
+          text-align: center;
+
+          small {
+            font-size: 10px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+
+  .in_title {
+    display: flex;
+    align-items: center;
+
+    p {
+      font-size: 13px;
+      font-weight: 500;
+    }
+  }
+
+  .add_lq_box {
+    .add_liq {
+      padding: 15px;
+      background-color: $SecondaryBodyBg;
+      border-radius: 5px;
+      margin-bottom: 28px;
+
+      p {
+        font-size: 11px;
+        font-weight: 400;
+        margin-bottom: 30px;
+        color: $textLight;
+      }
+
+      .linkBtn {
+        margin-bottom: 12px;
+
+        img {
+          display: inline-block;
+          width: 8px;
+        }
+      }
+    }
+
+    .tokeninfo {
+      font-size: 11px;
+      color: $textLight;
+      font-weight: 400;
+      letter-spacing: -0.2px;
+
+      a {
+        color: $BtnPrimary;
+        text-decoration: underline;
+        font-weight: 600;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    .liquidity_list {
+      margin: 18px 0;
+      padding: 10px;
+      border-radius: 30px;
+      background: $SecondaryBodyBg;
+      cursor: pointer;
+
+      @media (max-width: 767px) {
+        border-radius: 12px;
+      }
+
+      h3 {
+        font-size: 11px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 0;
+      }
+    }
+
+    // your liquidity accordian
+    .yourLiq_accordian {
+      margin-bottom: 10px;
+
+      .accordion-item {
+        background-color: $dimbg;
+        border-radius: 16px;
+        border: 2px solid #7868e6;
+        color: $white;
+
+        .accordion-header {
+          .accordion-button {
+            color: $white;
+            background-color: $dimbg;
+            border: 0;
+            border-radius: 16px;
+            font-size: 14px;
+            font-weight: 600;
+
+            &:hover,
+            &:active,
+            &:focus {
+              box-shadow: unset;
+            }
+
+            &::after {
+              margin-left: 20px;
+              background-image: url(../../assets/images/down-arrow.png);
+              background-size: 15px;
+              background-position: center;
+            }
+          }
+
+          .accordion-body {
+            @media (max-width: 767px) {
+              padding: 12px;
+            }
+          }
+        }
+
+        .amountDiv {
+          display: flex;
+          justify-content: space-between;
+
+          ul {
+            padding: 0;
+
+            li {
+              font-size: 13px;
+              font-weight: 700;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+
+      .remove_liq {
+        .remove_liq_btn {
+          padding: 10px 15px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.LptokensList {
+  padding: 0;
+
+  li {
+    margin-bottom: 5px;
+  }
+}
+
+.btnSwap {
+  img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.importpoolbox {
+  background: transparent;
+  border: 1px solid $secondaryColor;
+  font-size: 11px;
+  font-weight: 400;
+  padding: 5px;
+  height: 32px;
+  color: $white;
+  border-radius: 27px;
+  margin: 30px 0;
+
+  @media (max-width: 767px) {
+    margin: 20px auto;
+    min-width: 180px;
+  }
+
+  img {
+    margin-right: 10px;
+    width: 17px;
+  }
+}
+
+.importpooldetails {
+  p {
+    font-size: 11px;
+    font-weight: 400;
+    color: $textLight;
+    margin-bottom: 0;
+  }
+
+  ul {
+    padding: 20px 0 0 0;
+    margin: 0;
+
+    li {
+      img {
+        max-width: 40px;
+      }
+    }
+  }
+}
+
+.label--dollar-value {
+  opacity: 0.5;
+
+  &.d-none {
+    display: none;
+  }
+}
+.removeBtn {
+  background: #525b72;
+  margin-left: 10px;
+  &:after {
+    position: absolute;
+    content: '';
+    background: #999fae;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 25px;
+    top: 0;
+    opacity: 0;
+    left: 100%;
+    transition: all ease 0.5s;
+  }
+  &:hover {
+    background-color: #999fae !important;
+    &::after {
+      background: #999fae !important;
+    }
+  }
+  img {
+    display: none !important;
+  }
+}

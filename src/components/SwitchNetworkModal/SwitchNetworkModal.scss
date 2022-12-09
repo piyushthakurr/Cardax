@@ -1,0 +1,73 @@
+@import "../../assets/theme/clr_var.scss";
+
+.connect_wallet {
+  .modal-dialog {
+    .modal-content {
+      .baseToken_style {
+        padding-top: 20px;
+
+        @media (max-width: 767px) {
+          padding-top: 0;
+        }
+
+        ul {
+          padding: 0 25px;
+
+          @media (max-width: 767px) {
+            padding: 0;
+            margin-bottom: 0;
+          }
+
+          li {
+            display: block;
+            margin-bottom: 10px;
+
+            button {
+              padding: 15px 20px;
+              border-radius: 30px;
+              width: 100%;
+              text-decoration: none;
+              font-size: 14px;
+              font-weight: 600;
+              color: #ffffff;
+              font-family: $baseFont;
+              display: block;
+              text-align: left;
+              height: auto;
+              background: #323245;
+              position: relative;
+              border: 0;
+
+              @media (max-width: 767px) {
+                padding: 12px 20px;
+                font-size: 13px;
+              }
+
+              &:focus {
+                box-shadow: none;
+              }
+
+              img {
+                width: 38px;
+                position: absolute;
+                right: 15px;
+                top: 6px;
+                height: 38px;
+                background: #fff;
+                border-radius: 50%;
+                padding: 1px;
+
+                @media (max-width: 767px) {
+                  width: 34px;
+                  right: 6px;
+                  top: 4px;
+                  height: 34px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
